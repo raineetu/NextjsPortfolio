@@ -1,6 +1,7 @@
 import { assets } from "@/constants/assets";
 import Image from "next/image";
 import React from "react";
+import Details from "./Details";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
       id="about"
       className="w-full px-[12%] py-10 scroll-mt-20 text-center mb-2 font-Ovo"
     >
-      <h4 className=" text-lg ">Introduction</h4>
+      <h4 className=" text-2xl ">Introduction</h4>
       <h2 className=" text-5xl ">About me</h2>
 
       <div className="flex flex-col lg:flex-row items-center w-full gap-20 my-20">
@@ -29,6 +30,7 @@ const About = () => {
             experiences and am always excited to take on new challenges that
             help me grow as a developer.
           </p>
+          <Details />
         </div>
       </div>
     </div>

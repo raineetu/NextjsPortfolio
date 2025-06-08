@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import DesktopNavbar from "./DesktopNavbar";
 import ThemeToggle from "./ThemeToggle";
-import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   return (
@@ -28,9 +27,6 @@ const Navbar = () => {
 
         {/* theme toggle and contact button */}
         <ThemeToggle />
-
-        {/* mobile menu */}
-        <MobileNavbar />
       </nav>
     </>
   );

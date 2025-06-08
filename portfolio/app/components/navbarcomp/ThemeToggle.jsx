@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "@/constants/assets";
 import Image from "next/image";
+import MobileNavbar from "./MobileNavbar";
 
 const ThemeToggle = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMenu = () => setIsOpen(true);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <>
       <div className="flex items-center gap-4">
@@ -22,7 +28,8 @@ const ThemeToggle = () => {
           <Image src={assets.arrow_icon} alt="contact" className="w-3" />
         </a>
 
-        <button className="block md:hidden ml-3">
+        {/* Menu Button for Mobile */}
+        <button className="block md:hidden ml-3" onClick={openMenu}>
           <Image
             src={assets.menu_black}
             alt="menu"
@@ -30,6 +37,9 @@ const ThemeToggle = () => {
           />
         </button>
       </div>
+
+      {/* Mobile Navbar */}
+      <MobileNavbar isOpen={isOpen} closeMenu={closeMenu} />
     </>
   );
 };

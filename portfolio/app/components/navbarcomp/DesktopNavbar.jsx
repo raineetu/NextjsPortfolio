@@ -3,13 +3,13 @@ import React from "react";
 const DesktopNavbar = () => {
   return (
     <>
-      <ul className="hidden md:flex items-center gap-6 lg:gap-12 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
-        <li className="justify-between items-center ">
+      <ul className="hidden md:flex items-center gap-6 lg:gap-12 rounded-full px-8 py-3 bg-white shadow-sm bg-opacity-50">
+        <li>
           <a className="font-Ovo" href="#top">
             Home
           </a>
         </li>
-        <li>
+        <li className="shrink-0 whitespace-nowrap">
           <a className="font-Ovo " href="#about">
             About Me
           </a>
@@ -19,12 +19,12 @@ const DesktopNavbar = () => {
             Services
           </a>
         </li>
-        <li>
+        <li className="shrink-0 whitespace-nowrap">
           <a className="font-Ovo" href="#work">
             My Work
           </a>
         </li>
-        <li>
+        <li className="shrink-0 whitespace-nowrap">
           <a className="font-Ovo" href="#contact">
             Contact Me
           </a>

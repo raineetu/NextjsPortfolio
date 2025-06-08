@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
 
       {/* navbar */}
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ">
+      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-9 flex items-center justify-between z-50 ">
         <a href="#top">
           <Image
             src={assets.logo}

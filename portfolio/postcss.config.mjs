@@ -11,6 +11,10 @@ const config = {
         Outfit: ["Outfit", "sans-serif"],
         Ovo: ["Ovo", "serif"],
       },
+      boxshadow: {
+        black: "1px 1px 0 #000",
+        white: "1px 1px 0 #fff",
+      },
     },
   },
 };

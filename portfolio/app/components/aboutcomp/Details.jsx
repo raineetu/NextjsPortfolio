@@ -10,7 +10,7 @@ const Details = () => {
           return (
             <li
               key={index}
-              className="border border-gray-200 rounded-2xl p-6 cursor-pointer shadow-xl flex flex-col items-center gap-4 hover:shadow-2xl transition-shadow duration-300"
+              className="border border-gray-200 rounded-2xl p-6 cursor-pointer shadow-xl flex flex-col items-center gap-4 hover:shadow-black transition-shadow duration-300"
             >
               <Image src={item.icon} alt="title" className="font-semibold " />
               <h3 className="font-semibold text-xl ">{item.title}</h3>

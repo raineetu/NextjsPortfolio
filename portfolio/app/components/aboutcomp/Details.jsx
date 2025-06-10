@@ -1,4 +1,4 @@
-import { infoList } from "@/constants/assets";
+import { infoList, toolsData } from "@/constants/assets";
 import Image from "next/image";
 import React from "react";
 
@@ -18,6 +18,20 @@ const Details = () => {
             </li>
           );
         })}
+      </ul>
+
+      <h4 className="my-6 text-gray-700 font-Ovo text-left text-xl">
+        Tools I use
+      </h4>
+      <ul className="flex items-center gap-3 sm:gap-5">
+        {toolsData.map((tool, index) => (
+          <li
+            key={index}
+            className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg p-2 cursor-pointer hover:translate-y-1 duration-500 "
+          >
+            <Image src={tool} alt="tool" className="w-7 sm:w-9" />
+          </li>
+        ))}
       </ul>
     </>
   );

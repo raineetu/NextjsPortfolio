@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <>
       {/* background image */}
-      <div className="fixed top-0 -z-10  translate-y-[-80%]">
+      <div className="fixed top-0 -z-10  translate-y-[-81%]">
         <Image src={assets.header_bg_color} alt="" className="w-full" />
       </div>
 

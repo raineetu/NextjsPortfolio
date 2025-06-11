@@ -17,27 +17,27 @@ const MobileNavbar = ({ isOpen, closeMenu }) => {
         />
       </div>
 
-      <li>
+      <li onClick={closeMenu}>
         <a className="font-Ovo" href="#top">
           Home
         </a>
       </li>
-      <li>
+      <li onClick={closeMenu}>
         <a className="font-Ovo" href="#about">
           About Me
         </a>
       </li>
-      <li>
+      <li onClick={closeMenu}>
         <a className="font-Ovo" href="#services">
           Services
         </a>
       </li>
-      <li>
+      <li onClick={closeMenu}>
         <a className="font-Ovo" href="#work">
           My Work
         </a>
       </li>
-      <li>
+      <li onClick={closeMenu}>
         <a className="font-Ovo" href="#contact">
           Contact Me
         </a>

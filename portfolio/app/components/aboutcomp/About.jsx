@@ -16,7 +16,7 @@ const About = () => {
         <div className="w-64 sm:w-80">
           <Image
             src={assets.user_image}
-            alt=""
+            alt="user_image"
             className="w-full rounded-3xl"
           />
         </div>

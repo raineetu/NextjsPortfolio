@@ -15,6 +15,9 @@ const config = {
         black: "1px 1px 0 #000",
         white: "1px 1px 0 #fff",
       },
+      gridTemplateColumns: {
+        auto: "repeat(auto-fit, minmax(200px, 1fr))",
+      },
     },
   },
 };

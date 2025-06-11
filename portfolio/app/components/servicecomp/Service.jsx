@@ -1,19 +1,18 @@
 import React from "react";
 import ServiceDetails from "./ServiceDetails";
+import SectionHeader from "../commoncomp/SectionHeader";
 
 const Service = () => {
   return (
-    <div
-      id="services"
-      className="w-full px-[12%] py-10 scroll-mt-20 text-center mb-2 font-Ovo"
-    >
-      <h4 className=" text-xl ">What I Offer</h4>
-      <h2 className=" text-4xl ">My Services</h2>
-
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        I am a frontend developer with a passion for creating engaging and
-      </p>
-
+    <div className="w-full px-[12%] scroll-mt-5 text-center mb-2 font-Ovo">
+      <SectionHeader
+        id="services"
+        smallHeading="What I Offer"
+        mainHeading="My Services"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam
+        neque ipsam, beatae quas dolore sit nisi voluptates doloremque modi ab
+        earum veritatis facilis, laboriosam, aut nihil soluta minima quia!"
+      />
       <ServiceDetails />
     </div>
   );

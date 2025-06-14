@@ -1,7 +1,7 @@
 import { assets } from "@/constants/assets";
 import Image from "next/image";
 import React from "react";
-import { Github, Linkedin, Facebook } from "lucide-react"; // ✅ Import Lucide icons
+import { Github, Linkedin, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (

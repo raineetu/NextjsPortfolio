@@ -59,7 +59,7 @@ const Work = () => {
       >
         Show More
         <Image
-          src={assets.right_arrow_bold}
+          src={isDark ? assets.right_arrow_white : assets.right_arrow_bold}
           alt="Right arrow"
           className="w-4"
         />

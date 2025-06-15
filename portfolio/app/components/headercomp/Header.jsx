@@ -1,8 +1,11 @@
+import { useTheme } from "@/app/context/ThemeContext";
 import { assets } from "@/constants/assets";
 import Image from "next/image";
 import React from "react";
 
 const Header = () => {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   return (
     <>
       <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
@@ -35,7 +38,9 @@ const Header = () => {
           <a
             href="/CVReactNeetu.pdf"
             download
-            className="px-8 py-3 border border-gray-500 rounded-full flex items-center gap-2 "
+            className={`px-8 py-3 border border-gray-500 rounded-full flex items-center gap-2 ${
+              isDark ? "bg-white text-black" : ""
+            } `}
           >
             View Resume{" "}
             <Image src={assets.download_icon} alt="download" className="w-4" />

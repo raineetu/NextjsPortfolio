@@ -2,20 +2,35 @@ import { assets } from "@/constants/assets";
 import Image from "next/image";
 import React from "react";
 import { Github, Linkedin, Facebook } from "lucide-react";
+import { useTheme } from "@/app/context/ThemeContext";
 
 const Footer = () => {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   return (
     <div className="mt-20">
       <div className="text-center">
-        <Image src={assets.logo} alt="logo" className="w-36 mx-auto mb-2" />
+        <Image
+          src={isDark ? assets.logo_dark : assets.logo}
+          alt="logo"
+          className="w-36 mx-auto mb-2"
+        />
       </div>
 
-      <div className="w-max flex items-center gap-2 mx-auto text-gray-700">
+      <div
+        className={`w-max flex items-center gap-2 mx-auto ${
+          isDark ? "text-white" : "text-gray-700"
+        }`}
+      >
         <Image src={assets.mail_icon} alt="mail icon" className="w-6" />
         raineetu0070@gmail.com
       </div>
 
-      <div className="text-center sm:flex items-center justify-between mt-12 mx-[10%] py-6 border-t border-gray-400 text-gray-600">
+      <div
+        className={`text-center sm:flex items-center justify-between mt-12 mx-[10%] py-6 border-t border-gray-400 ${
+          isDark ? "text-white" : "text-gray-600"
+        }`}
+      >
         <p>&copy; 2025 Neetu Rai. All rights reserved.</p>
 
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">

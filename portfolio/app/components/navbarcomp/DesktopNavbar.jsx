@@ -1,3 +1,4 @@
+import { useTheme } from "@/app/context/ThemeContext";
 import { Home, User, Settings, Briefcase, Mail } from "lucide-react";
 import React from "react";
 
@@ -12,8 +13,15 @@ const NavItems = ({ href, icon: Icon, label }) => (
 );
 
 const DesktopNavbar = () => {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+
   return (
-    <ul className="hidden md:flex items-center gap-6 lg:gap-12 rounded-full px-8 py-3 bg-white shadow-sm bg-opacity-50">
+    <ul
+      className={`hidden md:flex items-center gap-6 lg:gap-12 rounded-full px-8 py-3 shadow-sm bg-opacity-50 ${
+        isDark ? "bg-gray-800 text-white" : "bg-white text-black"
+      }`}
+    >
       <NavItems href="#home" icon={Home} label="Home" />
       <NavItems href="#about" icon={User} label="About" />
       <NavItems href="#skills" icon={Settings} label="Skills" />

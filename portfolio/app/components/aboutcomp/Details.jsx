@@ -1,8 +1,11 @@
+import { useTheme } from "@/app/context/ThemeContext";
 import { infoList, toolsData } from "@/constants/assets";
 import Image from "next/image";
 import React from "react";
 
 const Details = () => {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   return (
     <>
       <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -10,9 +13,15 @@ const Details = () => {
           return (
             <li
               key={index}
-              className="border border-gray-200 rounded-2xl p-6 cursor-pointer shadow-xl flex flex-col items-center gap-4 hover:shadow-black transition-shadow duration-300"
+              className={`border border-gray-200 rounded-2xl p-6 cursor-pointer shadow-md flex flex-col items-center gap-4 ${
+                isDark ? "hover:shadow-gray-100" : "hover:shadow-black"
+              }  transition-shadow duration-300`}
             >
-              <Image src={item.icon} alt="title" className="font-semibold " />
+              <Image
+                src={item.icon}
+                alt="title"
+                className={`font-semibold ${isDark ? "invert" : ""}`}
+              />
               <h3 className="font-semibold text-xl ">{item.title}</h3>
               <p>{item.description}</p>
             </li>
@@ -20,9 +29,7 @@ const Details = () => {
         })}
       </ul>
 
-      <h4 className="my-6 text-gray-700 font-Ovo text-left text-xl">
-        Tools I use
-      </h4>
+      <h4 className="my-6  font-Ovo text-left text-xl">Tools I use</h4>
       <ul className="flex items-center gap-3 sm:gap-5">
         {toolsData.map((tool, index) => (
           <li

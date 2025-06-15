@@ -19,7 +19,7 @@ const DesktopNavbar = () => {
   return (
     <ul
       className={`hidden md:flex items-center gap-6 lg:gap-12 rounded-full px-8 py-3 shadow-sm bg-opacity-50 ${
-        isDark ? "bg-gray-800 text-white" : "bg-white text-black"
+        isDark ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
       <NavItems href="#home" icon={Home} label="Home" />

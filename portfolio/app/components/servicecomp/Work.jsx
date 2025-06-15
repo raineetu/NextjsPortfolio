@@ -1,8 +1,11 @@
 import React from "react";
 import { assets, workData } from "@/constants/assets";
 import Image from "next/image";
+import { useTheme } from "@/app/context/ThemeContext";
 
 const Work = () => {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   return (
     <div
       id="work"
@@ -23,12 +26,20 @@ const Work = () => {
             className="relative h-64 bg-cover bg-center rounded-md overflow-hidden group"
             style={{ backgroundImage: `url(${work.bgImage})` }}
           >
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between group-hover:bottom-7 duration-300">
+            <div
+              className={` w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between group-hover:bottom-7 duration-300 ${
+                isDark ? "bg-gray-900" : "bg-white"
+              }`}
+            >
               <div>
                 <h2 className="font-semibold text-lg">{work.title}</h2>
-                <p className="text-sm text-gray-600">{work.description}</p>
+                <p className="text-sm ">{work.description}</p>
               </div>
-              <div className="border rounded-full p-2 aspect-square duration-300 cursor-pointer">
+              <div
+                className={`border rounded-full p-2 aspect-square duration-300 cursor-pointer ${
+                  isDark ? "bg-white" : ""
+                }`}
+              >
                 <Image
                   src={assets.send_icon}
                   alt="icon"

@@ -2,6 +2,7 @@ import { assets } from "@/constants/assets";
 import Image from "next/image";
 import React from "react";
 import Details from "./Details";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
@@ -13,14 +14,24 @@ const About = () => {
       <h2 className=" text-4xl ">About Me</h2>
 
       <div className="flex flex-col lg:flex-row items-center w-full gap-20 my-20">
-        <div className="w-64 sm:w-80">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="w-64 sm:w-80"
+        >
           <Image
             src={assets.user_image}
             alt="user_image"
             className="w-full rounded-3xl"
           />
-        </div>
-        <div className="flex-1">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="flex-1"
+        >
           <p className="mb-10 max-w-2xl font-Ovo">
             I am a passionate frontend developer with a growing love for
             building clean, responsive, and user-friendly websites. While I’m
@@ -31,7 +42,7 @@ const About = () => {
             help me grow as a developer.
           </p>
           <Details />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

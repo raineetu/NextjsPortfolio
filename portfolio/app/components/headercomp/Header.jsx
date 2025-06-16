@@ -2,6 +2,7 @@ import { useTheme } from "@/app/context/ThemeContext";
 import { assets } from "@/constants/assets";
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
 
 const Header = () => {
   const { theme } = useTheme();
@@ -17,7 +18,7 @@ const Header = () => {
           />
         </div>
         <h3 className="flex items-center gap-2 text-xl md:text-2xl font-Ovo">
-          Hello! I'm Neetu Rai{" "}
+          <span className="continuous">Hello! I'm Neetu Rai </span>
           <Image src={assets.hand_icon} alt="wave" className="w-6" />
         </h3>
         <h1 className="text-3xl sm:text-6xl lg:text-[44px]">

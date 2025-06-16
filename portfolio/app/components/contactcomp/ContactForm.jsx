@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const ContactForm = () => {
+const ContactForm = ({ isDark }) => {
   const [result, setResult] = useState("");
   const [sending, setSending] = useState(false);
 
@@ -41,14 +41,18 @@ const ContactForm = () => {
             placeholder="Enter your name"
             required
             name="name"
-            className="flex-1 p-3 border-[0.5] border-gray-400 rounded-lg outline-none bg-white"
+            className={`flex-1 p-3 border-[0.5] border-gray-400 rounded-lg outline-none ${
+              isDark ? "bg-gray-900 text-white" : "bg-white"
+            }`}
           />
           <input
             type="email"
             placeholder="Enter your email"
             required
             name="email"
-            className="flex-1 p-3 border-[0.5] border-gray-400 rounded-lg outline-none bg-white"
+            className={`flex-1 p-3 border-[0.5] border-gray-400 rounded-lg outline-none  ${
+              isDark ? "bg-gray-900 text-white" : "bg-white"
+            }`}
           />
         </div>
         <textarea
@@ -56,11 +60,15 @@ const ContactForm = () => {
           placeholder="Enter your message"
           required
           name="message"
-          className="w-full p-3 border-[0.5] border-gray-400 rounded-lg outline-none bg-white"
+          className={`w-full p-3 border-[0.5] border-gray-400 rounded-lg outline-none  ${
+            isDark ? "bg-gray-900 text-white" : "bg-white"
+          }`}
         ></textarea>
         <button
           type="submit"
-          className="py-3 px-6 w-max flex items-center justify-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer"
+          className={`py-3 px-6 mt-4 w-max flex items-center justify-center gap-2  rounded-full mx-auto bg-black/80 text-white  duration-500 cursor-pointer border ${
+            isDark ? "border-gray-400" : "hover:bg-black"
+          }`}
         >
           <ToastContainer position="top-center" autoClose={2000} />
 

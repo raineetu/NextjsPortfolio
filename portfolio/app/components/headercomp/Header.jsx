@@ -18,16 +18,33 @@ const Header = () => {
           />
         </div>
         <h3 className="flex items-center gap-2 text-xl md:text-2xl font-Ovo">
-          <span className="continuous">Hello! I'm Neetu Rai </span>
+          <motion.span
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="continuous"
+          >
+            Hello! I'm Neetu Rai{" "}
+          </motion.span>
           <Image src={assets.hand_icon} alt="wave" className="w-6" />
         </h3>
-        <h1 className="text-3xl sm:text-6xl lg:text-[44px]">
+        <motion.h1
+          initial={{ y: -30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-3xl sm:text-6xl lg:text-[44px]"
+        >
           Passionate Frontend Developer
-        </h1>
-        <p className="max-w-2xl mx-auto font-Ovo">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="max-w-2xl mx-auto font-Ovo"
+        >
           I build beautiful and responsive web interfaces using modern
           technologies.
-        </p>
+        </motion.p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 ">
           <a
             href="#contact"

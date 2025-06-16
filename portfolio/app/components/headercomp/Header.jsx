@@ -14,7 +14,7 @@ const Header = () => {
           <Image
             src={assets.profile_img}
             alt="profile"
-            className="rounded-full w-44"
+            className="rounded-full w-55"
           />
         </div>
         <h3 className="flex items-center gap-2 text-xl md:text-2xl font-Ovo">

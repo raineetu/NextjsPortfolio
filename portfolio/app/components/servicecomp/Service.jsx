@@ -4,7 +4,10 @@ import SectionHeader from "../commoncomp/SectionHeader";
 
 const Service = () => {
   return (
-    <div className="w-full px-[12%] scroll-mt-5 text-center mb-2 font-Ovo">
+    <div
+      id="skills"
+      className="w-full px-[12%] py-10 scroll-mt-25 text-center mb-2 font-Ovo"
+    >
       <SectionHeader
         id="services"
         smallHeading="What I Offer"

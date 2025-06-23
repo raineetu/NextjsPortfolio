@@ -22,7 +22,7 @@ const DesktopNavbar = () => {
         isDark ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
-      <NavItems href="#home" icon={Home} label="Home" />
+      <NavItems href="#" icon={Home} label="Home" />
       <NavItems href="#about" icon={User} label="About" />
       <NavItems href="#skills" icon={Settings} label="Skills" />
       <NavItems href="#projects" icon={Briefcase} label="Projects" />

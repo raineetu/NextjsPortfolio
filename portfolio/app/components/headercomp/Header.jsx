@@ -9,7 +9,8 @@ const Header = () => {
   const isDark = theme === "dark";
   return (
     <>
-      <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
+      <div className="relative w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
+        <div className="absolute top-18 w-72 h-72 bg-gradient-to-tr from-pink-300 to-purple-400 rounded-full opacity-40 blur-3xl z-[-1]"></div>
         <div>
           <Image
             src={assets.profile_img}
@@ -24,7 +25,7 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="continuous"
           >
-            Hello! I'm Neetu Rai{" "}
+            Hello! I'm Neetu Rai
           </motion.span>
           <Image src={assets.hand_icon} alt="wave" className="w-6" />
         </h3>
@@ -32,7 +33,7 @@ const Header = () => {
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-3xl sm:text-6xl lg:text-[44px]"
+          className="text-3xl sm:text-6xl lg:text-[44px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-purple-600 to-pink-500"
         >
           Passionate Frontend Developer
         </motion.h1>

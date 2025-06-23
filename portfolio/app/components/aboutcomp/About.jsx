@@ -11,7 +11,9 @@ const About = () => {
       className="w-full px-[12%] py-10 scroll-mt-25 text-center mb-2 font-Ovo"
     >
       <h4 className=" text-2xl ">Introduction</h4>
-      <h2 className=" text-4xl ">About Me</h2>
+      <h2 className=" text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 inline-block ">
+        About Me
+      </h2>
 
       <div className="flex flex-col lg:flex-row items-center w-full gap-20 my-10">
         <motion.div

@@ -21,7 +21,7 @@ const SectionHeader = ({ id, smallHeading, mainHeading, description }) => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
-        className=" text-4xl "
+        className=" text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 inline-block "
       >
         {mainHeading}
       </motion.h2>

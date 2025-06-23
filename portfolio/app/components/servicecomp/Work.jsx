@@ -12,8 +12,8 @@ const Work = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      id="work"
-      className="w-full px-[12%] py-10 scroll-mt-20 text-center mb-2 font-Ovo"
+      id="projects"
+      className="w-full px-[12%] py-10 scroll-mt-25 text-center mb-2 font-Ovo"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
@@ -37,10 +37,10 @@ const Work = () => {
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit magni
-        assumenda labore adipisci? Beatae ipsum, distinctio praesentium, quia
-        nam reiciendis recusandae, explicabo nulla sapiente dolore natus omnis
-        non. Asperiores, impedit.
+        Each project in my portfolio is a reflection of my passion for clean
+        design, intuitive user experience, and scalable development. From web
+        interfaces to mobile-friendly designs, my work blends creativity with
+        performance to bring ideas to life in the digital space.
       </motion.p>
       <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-5 my-10">
         {workData.map((work, index) => (
@@ -63,13 +63,15 @@ const Work = () => {
                   isDark ? "bg-white" : ""
                 }`}
               >
-                <Image
-                  src={assets.send_icon}
-                  alt="icon"
-                  className="w-5 h-5"
-                  width={20}
-                  height={20}
-                />
+                <a href={work.link} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={assets.send_icon}
+                    alt="icon"
+                    className="w-5 h-5"
+                    width={20}
+                    height={20}
+                  />
+                </a>
               </div>
             </div>
           </div>

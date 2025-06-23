@@ -94,24 +94,27 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
+    title: "Music UI",
+    description: "Web Application",
+    bgImage: "/work-1.webp",
+    link: "https://neetuheadphones.netlify.app/",
+  },
+  {
+    title: "Anime Site",
+    description: "Web Application",
+    bgImage: "/work-2.webp",
+    link: "https://github.com/raineetu/Anime-Website/blob/main/Project%20scrrenshots/1.jpeg",
+  },
+  {
+    title: "BookShelf",
     description: "Web Design",
-    bgImage: "/work-1.png",
+    bgImage: "/work-3.jpeg",
+    link: "https://mybooksshelff.netlify.app/",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
-  },
-  {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
-  },
-  {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Stock Market",
+    description: "Web Application",
+    bgImage: "/work-4.jpg",
   },
 ];
 

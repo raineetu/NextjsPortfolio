@@ -118,28 +118,30 @@ export const workData = [
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
+    title: "Web Design",
+    description:
+      "Crafting responsive, accessible, and visually appealing web interfaces tailored to modern user needs using clean HTML, CSS, and design principles.",
     link: "",
   },
   {
     icon: assets.mobile_icon,
-    title: "Mobile app",
+    title: "Frontend Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Building interactive and performant web applications using React, Next.js, Tailwind CSS, and modern JavaScript frameworks.",
     link: "",
   },
   {
     icon: assets.ui_icon,
-    title: "UI/UX design",
+    title: "UI/UX Design",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Designing intuitive and user-centric interfaces that enhance user satisfaction and drive engagement across devices.",
     link: "",
   },
   {
     icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    title: "Performance & SEO Optimization",
+    description:
+      "Improving site speed, SEO, and accessibility to boost visibility, user experience, and search engine rankings.",
     link: "",
   },
 ];

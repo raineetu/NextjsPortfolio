@@ -9,9 +9,7 @@ const Service = () => {
         id="services"
         smallHeading="What I Offer"
         mainHeading="My Services"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam
-        neque ipsam, beatae quas dolore sit nisi voluptates doloremque modi ab
-        earum veritatis facilis, laboriosam, aut nihil soluta minima quia!"
+        description="I specialize in creating responsive, user-friendly, and accessible web interfaces using modern technologies like React, Next.js, and Tailwind CSS. From building sleek landing pages to developing complex web applications, I focus on clean code, performance optimization, and delivering intuitive user experiences tailored to your business needs."
       />
       <ServiceDetails />
     </div>

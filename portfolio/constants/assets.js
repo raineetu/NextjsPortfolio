@@ -115,6 +115,7 @@ export const workData = [
     title: "Stock Market",
     description: "Web Application",
     bgImage: "/work-4.jpg",
+    link: "https://github.com/intujicoder/intern-stock-market-fe",
   },
 ];
 

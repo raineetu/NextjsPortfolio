@@ -17,10 +17,8 @@ const Contact = () => {
       <h4 className=" text-xl ">Connect with me</h4>
       <h2 className=" text-4xl ">Get in touch</h2>
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit magni
-        assumenda labore adipisci? Beatae ipsum, distinctio praesentium, quia
-        nam reiciendis recusandae, explicabo nulla sapiente dolore natus omnis
-        non. Asperiores, impedit.
+        I'm currently open to freelance work or full-time opportunities, and I’d
+        love to hear how I can help bring your ideas to life.
       </p>
 
       <ContactForm isDark={isDark} />

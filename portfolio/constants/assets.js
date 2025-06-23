@@ -11,6 +11,13 @@ import figma from "../assets/figma.png";
 import git from "../assets/git.png";
 import mongodb from "../assets/mongodb.png";
 import saas from "../assets/saaspng.png";
+import typescript from "../assets/typescript.png";
+import chart from "../assets/Chart.png";
+import java from "../assets/JavaScript.png";
+import react from "../assets/react.png";
+import node from "../assets/node.png";
+import tailwind from "../assets/tailwindpng.png";
+import html from "../assets/html.jpeg";
 import right_arrow_white from "../assets/right-arrow-white.png";
 import logo from "../assets/final.png";
 import logo_dark from "../assets/black.png";
@@ -51,6 +58,13 @@ export const assets = {
   git,
   mongodb,
   saas,
+  typescript,
+  chart,
+  react,
+  html,
+  tailwind,
+  java,
+  node,
   right_arrow_white,
   logo,
   logo_dark,
@@ -160,14 +174,11 @@ export const toolsData = [
   assets.figma,
   assets.saas,
   assets.git,
-  assets.git,
-  assets.git,
-  assets.git,
-  assets.git,
-  assets.git,
-  assets.git,
-  assets.git,
-  assets.git,
-  assets.git,
-  assets.git,
+  assets.react,
+  assets.node,
+  assets.tailwind,
+  assets.java,
+  assets.html,
+  assets.chart,
+  assets.typescript,
 ];

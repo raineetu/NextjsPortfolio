@@ -29,8 +29,8 @@ const Details = () => {
         })}
       </ul>
 
-      <h4 className="my-6  font-Ovo text-left text-xl">Tools I use</h4>
-      <ul className="flex items-center gap-3 sm:gap-5">
+      <h4 className="my-6 font-Ovo text-left text-xl">Tools I use</h4>
+      <ul className="flex flex-wrap items-center gap-3 sm:gap-5">
         {toolsData.map((tool, index) => (
           <li
             key={index}

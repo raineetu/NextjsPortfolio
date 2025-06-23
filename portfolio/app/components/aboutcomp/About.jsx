@@ -18,7 +18,7 @@ const About = () => {
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="w-64 sm:w-80"
+          className="w-64 sm:w-80 shrink-0"
         >
           <Image
             src={assets.user_image}

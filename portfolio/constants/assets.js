@@ -10,6 +10,7 @@ import firebase from "../assets/firebase.png";
 import figma from "../assets/figma.png";
 import git from "../assets/git.png";
 import mongodb from "../assets/mongodb.png";
+import saas from "../assets/saaspng.png";
 import right_arrow_white from "../assets/right-arrow-white.png";
 import logo from "../assets/final.png";
 import logo_dark from "../assets/black.png";
@@ -49,6 +50,7 @@ export const assets = {
   figma,
   git,
   mongodb,
+  saas,
   right_arrow_white,
   logo,
   logo_dark,
@@ -154,7 +156,18 @@ export const infoList = [
 export const toolsData = [
   assets.vscode,
   assets.firebase,
-  assets.postgress,
+  assets.mongodb,
   assets.figma,
+  assets.saas,
+  assets.git,
+  assets.git,
+  assets.git,
+  assets.git,
+  assets.git,
+  assets.git,
+  assets.git,
+  assets.git,
+  assets.git,
+  assets.git,
   assets.git,
 ];

@@ -43,6 +43,9 @@ import right_arrow from "../assets/right-arrow.png";
 import send_icon from "../assets/send-icon.png";
 import right_arrow_bold from "../assets/right-arrow-bold.png";
 import right_arrow_bold_dark from "../assets/right-arrow-bold-dark.png";
+import facebook from "../assets/facebook.png";
+import linkedin from "../assets/linkpng.png";
+import gitt from "../assets/github.jpg";
 
 export const assets = {
   user_image,
@@ -90,6 +93,9 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  facebook,
+  linkedin,
+  gitt,
 };
 
 export const workData = [
@@ -187,4 +193,18 @@ export const toolsData = [
   assets.html,
   assets.chart,
   assets.typescript,
+];
+
+export const footerImage = [
+  { icon: assets.gitt, name: "GitHub", url: "https://github.com/raineetu" },
+  {
+    icon: assets.linkedin,
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/neetu-rai-6a073b321/",
+  },
+  {
+    icon: assets.facebook,
+    name: "Facebook",
+    url: "https://www.facebook.com/rai.neetu.33",
+  },
 ];

@@ -1,4 +1,4 @@
-import user_image from "../assets/user-image.png";
+import user_image from "../assets/neetu.jpg";
 import code_icon from "../assets/code-icon.png";
 import code_icon_dark from "../assets/code-icon-dark.png";
 import edu_icon from "../assets/edu-icon.png";
@@ -23,7 +23,7 @@ import logo from "../assets/final.png";
 import logo_dark from "../assets/black.png";
 import mail_icon from "../assets/mail_icon.png";
 import mail_icon_dark from "../assets/mail_icon_dark.png";
-import profile_img from "../assets/profile-img.png";
+import profile_img from "../assets/neetu1.jpg";
 import download_icon from "../assets/download-icon.png";
 import hand_icon from "../assets/hand-icon.png";
 import header_bg_color from "../assets/header-bg-color.png";

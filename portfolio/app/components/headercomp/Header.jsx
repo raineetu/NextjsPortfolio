@@ -11,13 +11,17 @@ const Header = () => {
     <>
       <div className="relative w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
         <div className="absolute top-18 w-72 h-72 bg-gradient-to-tr from-pink-300 to-purple-400 rounded-full opacity-40 blur-3xl z-[-1]"></div>
-        <div>
+        <div className="w-60 h-60 rounded-full overflow-hidden border border-gray-800 ">
           <Image
             src={assets.profile_img}
             alt="profile"
-            className="rounded-full w-55"
+            width={240}
+            height={240}
+            className="rounded-full object-contain"
+            priority
           />
         </div>
+
         <h3 className="flex items-center gap-2 text-xl md:text-2xl font-Ovo">
           <motion.span
             initial={{ y: -20, opacity: 0 }}

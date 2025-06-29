@@ -15,7 +15,7 @@ const ThemeToggle = () => {
   return (
     <>
       <div className="flex items-center gap-4">
-        <button onClick={toggleTheme} className="hidden md:block">
+        <button onClick={toggleTheme}>
           <Image
             src={theme === "dark" ? assets.sun_icon : assets.moon_icon}
             alt="icon"

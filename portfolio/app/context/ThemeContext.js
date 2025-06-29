@@ -12,6 +12,7 @@ export const ThemeProvider = ({ children }) => {
     ).matches;
     const initialTheme = savedTheme || (preferredTheme ? "dark" : "light");
     setTheme(initialTheme);
+    document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(initialTheme);
   }, []);
 
@@ -19,7 +20,8 @@ export const ThemeProvider = ({ children }) => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(newTheme);
   };
 
   return (

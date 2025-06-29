@@ -59,7 +59,7 @@ const Header = () => {
             <Image src={assets.right_arrow_white} alt="arrow" className="w-4" />
           </a>
           <a
-            href="/CVReactNeetu.pdf"
+            href="/NeetuRaiCV.pdf"
             download
             className={`px-8 py-3 border border-gray-500 rounded-full flex items-center gap-2 ${
               isDark ? "bg-white text-black" : ""

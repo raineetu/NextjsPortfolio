@@ -1,5 +1,9 @@
 const config = {
-  plugins: ["@tailwindcss/postcss"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -11,7 +15,7 @@ const config = {
         Outfit: ["Outfit", "sans-serif"],
         Ovo: ["Ovo", "serif"],
       },
-      boxshadow: {
+      boxShadow: {
         black: "1px 1px 0 #000",
         white: "1px 1px 0 #fff",
       },
@@ -20,6 +24,7 @@ const config = {
       },
     },
   },
+  plugins: [],
 };
 
 export default config;
